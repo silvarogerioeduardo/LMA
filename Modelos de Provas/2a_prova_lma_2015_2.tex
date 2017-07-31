@@ -1,0 +1,237 @@
+\documentclass[12pt, a4paper,final]{article}
+\usepackage{t1enc}
+\usepackage[utf8]{inputenc}
+\usepackage[portuges,brazilian]{babel}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{comment,color} %%% 
+%\usepackage{tikz}
+%\usepackage{comment, color } %%% inclui
+
+%%%\usepackage{graphicx,url}
+\topmargin       0cm 
+\headheight      0pt 
+\headsep         0cm
+\textheight      24cm
+\textwidth       16.7cm
+\oddsidemargin   -2mm
+\evensidemargin  -2mm
+\pagestyle{empty}
+
+%%%\graphicspath{{/figures/}}   
+%%\DeclareGraphicsExtensions{{.jpg},{.png}}
+
+
+\begin{document}
+%\framebox[15cm][c]
+
+\begin{center}
+\fbox{$2^a$ Avalia\c c\~ao de L\'ogica Matem\'atica  (LMA) - Joinville, \today }
+\fbox{professores: Claudio e Jimmy}
+\end{center}
+
+%{\bf\textcolor{red}{Rogerio ... amanha pegamos novas questoes do livro}}
+\begin{flushright}
+``É capaz quem pensa que é capaz.''\\{\footnotesize  Buda}
+\end{flushright}
+
+
+\vskip 0.5cm Acad\^emico(a) : \rule{10cm}{0.4pt} Turma:  \rule{1cm}{0.4pt}
+\noindent
+
+\begin{enumerate}
+%\setlength{\itemsep}{-1pt}
+
+\itemsep 1cm
+
+\item Verificar a \textbf{validade dos argumentos} (dedu\c c\~ao natural) que se seguem: %(escolha duas das 3 para desenvolver):
+
+\begin{enumerate}
+
+\item $\{ p \vee \sim q,~ \sim p,~ \sim (p \wedge r) \rightarrow q \} ~\vdash~ r$
+%% pagina 110 -- 1h
+
+\item $\{ \sim (p \vee q),~ \sim p \wedge \sim q \rightarrow r \wedge s,~ s \rightarrow r \} ~\vdash~ r$
+%% pagina 111 -- 4b modificado
+
+\item $\{ p \vee q,~ q \rightarrow r,~ \sim r \vee s,~ \sim p \} ~\vdash~ s$
+%% pagina 110 -- 2c
+
+%\item $\{ p \rightarrow q, \:\: p \vee (\sim \sim r \wedge \sim \sim  q), s \rightarrow \sim r, \sim (p \wedge q) \}$ {\bf $\vdash $} $\sim (s \wedge q)$
+ %% pagina 116 -- 11
+
+%\item $\{ p \rightarrow q, \:\: \sim r \rightarrow (s \rightarrow t),\:\: r \vee (p \vee s), \:\: \sim r \}$ {\bf $\vdash $} $q \vee t$
+ %% pagina 115 -- 9
+
+
+%\item $\{ p \rightarrow q, \:\: q \rightarrow r, \:\: r \rightarrow s, \:\: \sim s, \:\: p \vee t \}$ {\bf $\vdash $} $t$
+ %% pagina 117 -- 13
+
+
+
+%\item $\{ p \rightarrow q, \:\: q \rightarrow r, \:\: p \vee s, \:\: s \rightarrow t, \:\: \sim t \}$ {\bf $\vdash $} $r$
+ %% pagina 118 -- 16 convertendo as comparaçoes em letras
+
+
+%\item $\{ p \vee q, \:\: q \rightarrow r, \:\: p \rightarrow s,  \:\: \sim s  \}$ {\bf $\vdash $} $r \wedge (p \vee q)$
+ %% pagina 126 -- D
+
+
+%\item $\{ r \rightarrow t, \:\:  s \rightarrow q, \:\: t \vee q \rightarrow \sim p, \:\:  r \vee s \}$ {\bf $\vdash $} $ \sim p$
+ %% pagina 126 -- m
+
+
+%\item $\{ p \wedge q, p \rightarrow r,  r \wedge s \rightarrow \sim t,  q \rightarrow s   \}$ {\bf $\vdash $} $\sim t$
+ %% pagina 121--  letra m
+
+%\item $\{ p \wedge \sim q, r \rightarrow q,  r \vee s,  p \vee s \rightarrow t   \}$ {\bf $\vdash $} $ t $
+ %% pagina 122--  letra e
+
+\end{enumerate}
+
+%\textcolor{red}{Vamo fazer algo totalmente NOVO}
+
+ \item Utilizando o m\'etodo de {\bf demonstra\c c\~ao condicional}, demonstre a validade das consequ\^encias abaixo:
+ 
+\begin{enumerate}
+
+%\item $\{p \wedge q \rightarrow \sim r,\:\: ~ r \vee (s \wedge t),\:\: p \leftrightarrow ~ q \} ~\vdash~  p \rightarrow s $ 
+ % pagina 134 -- 11
+
+\item $\{r \rightarrow t, ~ t \rightarrow ~ \sim s,
+   ~ (r \rightarrow \sim s) \rightarrow q \} ~\vdash~  p \rightarrow (p \wedge q) $ 
+ % pagina 153 -- 1c
+
+
+\item $\{p \rightarrow q, \:\: q \leftrightarrow ~ s, \:\: t \vee (r \wedge \sim s) \} ~\vdash~ p \rightarrow t $ 
+  % pagina 148 -- 5
+
+%\item $\{r \vee s, ~ \sim t \rightarrow ~ \sim p,
+%   ~ r \rightarrow \sim q \} ~\vdash~ \sim (p \wedge q) \rightarrow (s \wedge t) $ 
+  % pagina 153 -- 1I
+
+%\item $\{(p \rightarrow q) \vee r, ~ s \vee t \rightarrow ~ \sim r,   ~ s \vee (t \wedge u) \} ~\vdash~ p \rightarrow q $ 
+ % pagina 154 -- 3E
+
+\item $\{ q \rightarrow p,\:\: t \vee s,\:\: q \vee\sim s \} ~\vdash~ \sim (p \vee r) \rightarrow t$
+% pagina 153 -- 1k
+
+
+
+
+\begin{comment}
+
+PRONTAS PARA o FUTURO
+
+\item $\{ p \vee q \rightarrow r,~ s \rightarrow \sim r \wedge \sim t,~ s \vee u \} ~\vdash~ p \rightarrow u$
+%pagina 153 -- 1l
+
+\item $\{ p \rightarrow q,~ r \rightarrow t,~ s \rightarrow r,~ p \vee s \} ~\vdash~ \sim q \rightarrow t $
+% pagina 153 -- 1m
+
+\end{comment}
+
+
+\end{enumerate}
+
+
+
+\item Demonstrar que o conjunto das proposi\c c\~oes abaixo geram uma contradi\c c\~ao ({\bf demons\-tra\c c\~ao por absurdo ou indireta}),  (isto \'e, derivam uma inconsist\^encia do tipo: ($\Box \Leftrightarrow (\sim x \wedge x)$)
+%Escolha duas provas para fazer das 3 que seguem  abaixo:
+
+\begin{enumerate}
+
+%\item $\{\ (p \wedge q) \leftrightarrow \sim r, \:\:  \sim r \rightarrow \sim p, \:\: \sim q \rightarrow \sim r   \} ~\vdash~   q $
+% pagina 154 -- 4I 
+
+%\item $\{\ (p \rightarrow q) \wedge r,\:\: q \vee s \rightarrow t \wedge u,\:\: v \rightarrow s,\:\: v \vee p \} ~\vdash~  t \vee x $
+% pagina 147 -- 3 convertendo as comparaçoes em letras
+
+
+%\item $\{\ \} ~\vdash~  $
+
+%\item $\{\sim (p \rightarrow q) \vee (s \rightarrow\sim r),~ q \vee s,~ p \rightarrow\sim s \} ~\vdash~ \sim r \vee\sim s$
+% pagina 155 -- 6d 
+
+%\item $\{\sim p \rightarrow \sim q \vee r,~ s \vee (r \rightarrow t),~ p \rightarrow s,~ \sim s \} ~\vdash~ q \rightarrow t$
+% pagina 155 -- 6c
+
+%\item $\{ \sim p \vee \sim q,~ r \vee s \rightarrow p,~ q \vee\sim s,~ \sim r ~\vdash~ \sim(r \vee s)$
+% pagina 154 -- 4I
+
+%\item $\{ \sim r \vee \sim s, \:\: q \rightarrow s ~\vdash~ r \rightarrow \sim q$
+% pagina 153 -- 1a TRIVIAL !!!
+
+
+\item $\{\ \sim (p\:\: \rightarrow \:\: \sim q) \rightarrow ((r \:\: \leftrightarrow \:\: s) \vee t),\:\:  p,\:\:  q,\:\:  \sim t    ,\:\:  r \} ~\vdash~    s $
+%% Pagina 155 6 g MODIFICADA
+
+
+
+\item $\{ p \vee q \rightarrow r,~ s \rightarrow \sim r \wedge \sim t,~ s \vee u,\:\: p   \} ~\vdash~ p \rightarrow u$
+%pagina 153 -- 1l  MODIFICADA
+
+\item $\{ p \rightarrow q,~ r \rightarrow t,~ s \rightarrow r,~ p \vee s ,\:\: \sim q  \} ~\vdash~  t $
+% pagina 153 -- 1m
+
+
+\end{enumerate}
+
+\end{enumerate}
+
+
+\newpage
+\underline{{\Large Equival\^encias Not\'aveis}}:
+\begin{description}
+\setlength{\itemsep}{-4pt}
+
+\item[Idempot\^encia (ID):] $P\Leftrightarrow P\wedge P$ ou $P\Leftrightarrow P\vee P$
+\item[Comuta\c c\~ao (COM):] $P\wedge Q\Leftrightarrow Q\wedge P$ ou $P\vee Q\Leftrightarrow Q\vee P$
+\item[Associa\c c\~ao (ASSOC):] $P\wedge(Q\wedge R)\Leftrightarrow (P\wedge Q)\wedge R$ ou $P\vee(Q\vee R)\Leftrightarrow (P\vee Q)\vee R$ 
+\item[Distribui\c c\~ao (DIST):] $P\wedge(Q\vee R)\Leftrightarrow (P\wedge Q)\vee (P \wedge R)$ ou $P\vee(Q\wedge R)\Leftrightarrow (P\vee Q)\wedge (P\vee R)$
+\item[Dupla Nega\c c\~ao (DN):] $P\Leftrightarrow\sim\sim P$
+\item[De Morgan (DM):] $\sim(P \wedge Q) \Leftrightarrow \sim P \vee\sim Q$ ou $\sim(P \vee Q) \Leftrightarrow \sim P \wedge\sim Q$
+\item[Equival\^encia da Condicional (COND):] $P\rightarrow Q \Leftrightarrow\sim P \vee Q$
+
+\item[Bicondicional (BICOND):] $P\leftrightarrow Q \Leftrightarrow (P\rightarrow Q)\wedge(Q\rightarrow P)$
+
+\item[Contraposi\c c\~ao (CP):] $P\rightarrow Q \Leftrightarrow \sim Q\rightarrow\sim P$
+
+\item[Exporta\c c\~ao-Importa\c c\~ao (EI):] $P\wedge Q\rightarrow R \Leftrightarrow P\rightarrow(Q\rightarrow R)$
+
+\item[Contradi\c c\~ao:] $P\wedge \sim P \Leftrightarrow \square $
+
+\item[Tautologia:] $ P\vee \sim P \Leftrightarrow \blacksquare    $
+\end{description}
+
+\underline{{\Large Regras Infer\^encias V\'alidas (Teoremas)}}:
+\begin{description}
+\setlength{\itemsep}{-4pt}
+\item[Adi\c c\~ao (AD):] $P \vdash P \vee Q$ ou $P \vdash Q \vee P$
+\item[Simplifica\c c\~ao (SIMP):] $P \wedge Q \vdash P$ ou $P \wedge Q \vdash Q$
+\item[Conjun\c c\~ao (CONJ)] $P, Q \vdash P \wedge Q$ ou $P, Q \vdash Q \wedge P$
+\item[Absor\c c\~ao (ABS):] $P \rightarrow Q \vdash P \rightarrow (P \wedge Q)$
+\item[Modus Ponens (MP):] $P \rightarrow Q, P \vdash Q$
+\item[Modus Tollens (MT):] $P \rightarrow Q, \sim Q \vdash \sim P$
+\item[Silogismo Disjuntivo (SD):] $P \vee Q, \sim P \vdash Q$ ou $P \vee Q, \sim Q \vdash P$
+\item[Silogismo Hipot\'etico (SH):] $P \rightarrow Q, Q\rightarrow R \vdash P\rightarrow R$
+\item[Dilema Construtivo (DC):] $P\rightarrow Q, R\rightarrow S, P \vee R \vdash Q\vee S$
+\item[Dilema Destrutivo (DD):] $P\rightarrow Q, R\rightarrow S, \sim Q\vee\sim S \vdash \sim P \vee\sim R$
+\end{description}
+
+%\end{enumerate}
+
+\begin{flushleft}
+\underline{Observa\c c\~oes}:
+\begin{enumerate}
+\setlength{\itemsep}{-2pt}
+\item Qualquer d\'uvida, desenvolva a quest\~ao e deixe tudo
+explicado, detalhadamente,
+ que avaliaremos o seu conhecimentos sobre
+ o assunto;\item \underline{Clareza e legibilidade};
+
+\end{enumerate}
+\end{flushleft}
+\end{document}
